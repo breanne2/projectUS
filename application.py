@@ -22,7 +22,7 @@ def index():
     #cursor = mysql.connect().cursor()
 
     conn = pymysql.connect(
-        host='customerdataus.c9emuq5rjjks.us-east-1.rds.amazonaws.com',
+        host='hellocustomerdataus.c9emuq5rjjks.us-east-1.rds.amazonaws.com',
         user='admin',
         password='Hollywarner10',
         db='UScustomerdatadb',
