@@ -8,11 +8,11 @@ application = Flask(__name__)
 
 @application.route("/index")
 def index():
-    application.config['MYSQL_HOST'] = 'customerdataus.c9emuq5rjjks.us-east-1.rds.amazonaws.com'
-    application.config['MYSQL_PORT'] = '3306'
-    application.config['MYSQL_DB'] = 'UScustomerdatadb'
-    application.config['MYSQL_USER'] = 'admin'
-    application.config['RMYSQL_PASSWORD'] = 'Hollywarner10'
+    application.config['RDS_HOSTNAME'] = 'customerdataus.c9emuq5rjjks.us-east-1.rds.amazonaws.com'
+    application.config['RDS_PORT'] = '3306'
+    application.config['RDS_DB_NAME'] = 'UScustomerdatadb'
+    application.config['RDS_USERNAME'] = 'admin'
+    application.config['RDS_PASSWORD'] = 'Hollywarner10'
 
     mysql.init_app(application)
 
