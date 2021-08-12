@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Inventory Page</title>
+    </head>
+    <body>
+    <table>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>productname</th>
+        <th>size</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for row in output_data %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+    </body>
+</html>

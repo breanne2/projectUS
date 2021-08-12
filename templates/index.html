@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>customer page </title>
+    </head>
+
+    <body>
+    <table>
+    <thead>
+    <tr>
+        <th>EmailId</th>
+        <th>Prefix</th>
+        <th>Name</th>
+        <th>PhoneNumber</th>
+        <th>AdditionalEmailId</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for row in output_data %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                 <td>{{row[3]}}</td>
+                 <td>{{row[4]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
