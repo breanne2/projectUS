@@ -23,7 +23,6 @@ def index():
 
     conn = pymysql.connect(
         host='customerdataus.c9emuq5rjjks.us-east-1.rds.amazonaws.com',
-        port='3306',
         user='admin',
         password='Hollywarner10',
         db='UScustomerdatadb',
@@ -54,7 +53,6 @@ def Authenticate():
     #cursor = mysql.connect().cursor()
     conn = pymysql.connect(
         host='globaldb-us-east.cluster-ro-c9emuq5rjjks.us-east-1.rds.amazonaws.com',
-        port='3306',
         user='admin',
         password='Hollywarner10',
         db='inventorydb',
