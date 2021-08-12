@@ -17,7 +17,7 @@ def index():
     mysql.init_app(application)
 
     cursor = mysql.connect().cursor()
-    cursor.execute('SELECT * FROM EU_cust_data')
+    cursor.execute('SELECT * FROM us_cust_table')
     data = cursor.fetchall()
     return render_template('index.html', output_data=data)
 
